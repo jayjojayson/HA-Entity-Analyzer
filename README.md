@@ -9,7 +9,7 @@ Erstellt als erstes im Dashboard eine neue [custom button card](https://github.c
 
 ```yaml
 type: custom:button-card
-name: Export my Entites as CSV
+name: Entity Export as CSV
 tap_action:
   action: javascript
   javascript: |
@@ -24,7 +24,7 @@ tap_action:
               return idA.localeCompare(idB);
           });
       
-          let csvContent = "ENTITY ID,ENTITY NAME,DEVICE NAME, DEVICE ID, AREA,PLATFORM (INTEGRATION),STATE,FORMATED STATE\n";
+          let csvContent = "ENTITY ID;ENTITY NAME;DEVICE NAME;DEVICE ID;AREA;PLATFORM (INTEGRATION);STATE;FORMATED STATE\n";
           
           sorted.forEach((ent) => {
               const eId = ent.entity_id;
@@ -37,7 +37,7 @@ tap_action:
               const state = stateObj.state;
               const formatedState = hass.formatEntityState(stateObj);
               
-              const info = [eId, entityName, deviceName, deviceId, areaName, platform, state, formatedState].join(", ");
+              const info = [eId, entityName, deviceName, deviceId, areaName, platform, state, formatedState].join("; ");
               
               csvContent += `${info}\n`;
           });
@@ -57,15 +57,13 @@ tap_action:
 
 ---
 
-Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann, allerdings mit einem Harken. Die csv muss zuvor mit einem beliebigen Tool, geht auch mit dem normalen Editor oder notepad++, alle Komma gegen ein Semikolon tauschen und wieder speichern. Danach klappt das Einlesen im Tool korrekt bzw. könnt ihr die Datei so auch z.B. mit Excel (Spaltenansicht) anschauen. 
+### Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Ihr könnt aber auch z.B. mit Excel (Spaltenansicht) oder anderem Programm die Datei anschauen.
 
-<img width="1289" height="407" alt="image (1)" src="https://github.com/user-attachments/assets/2d32538e-b6db-464f-996e-f1adc4d2c734" />
-
-### Das Tool nutzt Python, daher muss Python installiert sein oder werden!
+#### Das Tool nutzt Python, daher muss Python installiert sein oder werden!
 
 
 
-### In **Windows** öffnet ihr dazu die Powershell und gebt folgenden Befehl ein:
+#### In **Windows** öffnet ihr dazu die Powershell und gebt folgenden Befehl ein:
 
 ```powershell
 winget install Python
@@ -81,7 +79,7 @@ Unter Windows könnt ihr die Python Datei direkt mit Doppelklick starten.
 
 ---
 
-### Unter **Linux** sollte es mit folgenden Befehlen im Terminal installiert werden können:
+#### Unter **Linux** sollte es mit folgenden Befehlen im Terminal installiert werden können:
 
 ```powershell
 sudo apt update && sudo apt install python3
