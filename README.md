@@ -93,7 +93,7 @@ Danach installiert ihr noch das pandas Paket bzw. die Bibliothek:
 pip install pandas
 ```
 
-Unter Linux kann es sein, dass ihr den Dateinamen von `entity_analyzer_v1.pyw` zu `entity_analyzer_v1.py` ändern müsst um das Tool zu starten. Nutze kein linux aktuell und bin mir daher nicht sicher, denke aber die Datei mit w am Ende kann nur unter windows gestartet werden.
+Unter Linux wird es so sein, dass ihr den Dateinamen von `entity_analyzer_v1.pyw` zu `entity_analyzer_v1.py` ändern müsst um das Tool zu starten. Nutze kein linux aktuell und bin mir daher nicht sicher, denke aber die Datei mit pyw am Ende kann nur unter windows gestartet werden. Ich habe daher beide Dateiversionen für win und linux in den Release gepackt.
 
 Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Oberfläche bietet ein paar Möglichkeiten eure Entitäten zu sichten. Nach dem öffnen seht ihr unten links die Anzahl der Entitäten!
 
