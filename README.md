@@ -1,7 +1,7 @@
 # HA-Entity-Analyzer
 Entity_Analyzer to anlyze the exported csv file from Home Assistant
 
-Man kann wie im [HA-Forum](https://community.home-assistant.io/t/export-list-of-entities-automations-etc/884341/23) beschrieben wurde, auf dem Dahsboard einen Button anlegen, der nach drücken alle Home Assistant Entitäten, Automationen usw. in eine csv Datei exportiert. Diese Funktion vermisse ich aktuell in HA, da man so eine schöne “offline/backup” Variante hat, die Entitäten zu strukturieren, zu kontrollieren, zu dokumentieren bzw. sich einen Überblick zu verschaffen. Perfekt um “Leichen” auszusortieren, Namenstrukturen zu entwickeln usw.. Anschauen könnt ihr euch die csv-Datei z.B. mit Excel oder mit dem beigefügtem Analyzer Tool.
+Man kann wie im [HA-Forum](https://community.home-assistant.io/t/export-list-of-entities-automations-etc/884341/23) beschrieben wurde, auf dem Dahsboard einen Button anlegen, der nach drücken alle Home Assistant Entitäten, Automationen usw. in eine csv Datei exportiert. Diese Funktion vermisse ich aktuell in HA, da man so eine schöne “offline/backup” Variante hat, die Entitäten zu strukturieren, zu kontrollieren, zu dokumentieren bzw. sich einen Überblick zu verschaffen. Perfekt um “Leichen” auszusortieren, Namenstrukturen zu entwickeln usw.. Anschauen könnt ihr euch die csv-Datei z.B. mit dem beigefügtem Analyzer Tool oder mit Excel.
 
 <img width="551" height="86" alt="image (1)" src="https://github.com/user-attachments/assets/9dbb3d10-0c5c-4f98-90ed-8fffbba94ece" />
 
@@ -57,11 +57,10 @@ tap_action:
 
 ---
 
-### Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Ihr könnt aber auch z.B. mit Excel (Spaltenansicht) oder anderem Programm die Datei anschauen.
+Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Ihr könnt aber auch z.B. mit Excel (Spaltenansicht) oder anderem Programm die Datei anschauen. Für Windows gibt es gibt zwei Wege für die Installation, erstens bequem mit fertigem Programm arbeiten oder zweitens Python direkt installieren und das py-Script starten. Für Linux bleibt aktuell nur die Möglichkeit über Python direkt zu arbeiten, folgt dazu den Anweisungen. Für Windows ladet euch einfach die ausführbare Version (.exe) herunter und startet das Programm.
 
-#### Das Tool nutzt Python, daher muss Python installiert sein oder werden!
-
-
+### Betrifft nur die manuelle Installation:
+Das Tool nutzt Python, daher muss Python installiert sein oder werden!
 
 #### In **Windows** öffnet ihr dazu die Powershell und gebt folgenden Befehl ein:
 
@@ -75,11 +74,11 @@ Danach installiert ihr noch das pandas Paket bzw. die Bibliothek:
 pip install pandas
 ```
 
-Unter Windows könnt ihr die Python Datei direkt mit Doppelklick starten.
+Unter Windows könnt ihr die Python Datei direkt aus dem "src" Ordner mit Doppelklick starten.
 
 ---
 
-#### Unter **Linux** sollte es mit folgenden Befehlen im Terminal installiert werden können:
+#### Unter **Linux** gebt folgende Befehle im Terminal ein:
 
 ```powershell
 sudo apt update && sudo apt install python3
@@ -91,7 +90,13 @@ Danach installiert ihr noch das pandas Paket bzw. die Bibliothek:
 pip install pandas
 ```
 
-Unter Linux wird es so sein, dass ihr den Dateinamen von `entity_analyzer_v1.pyw` zu `entity_analyzer_v1.py` ändern müsst um das Tool zu starten. Nutze kein linux aktuell und bin mir daher nicht sicher, denke aber die Datei mit pyw am Ende kann nur unter windows gestartet werden. Ich habe daher beide Dateiversionen für win und linux in den Release gepackt.
+Um das Programm zu öffnen, wechselt mit cd /euer Verzeichnis in den Ordner wo euer Entity_Analyzer liegt und startet mit folgendem Befehl das Tool.
+
+```powershell
+python3 entity_analyzer_v1.py
+```
+
+---
 
 Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Oberfläche bietet ein paar Möglichkeiten eure Entitäten zu sichten. Nach dem öffnen seht ihr unten links die Anzahl der Entitäten!
 
