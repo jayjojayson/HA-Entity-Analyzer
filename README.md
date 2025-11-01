@@ -102,7 +102,7 @@ Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Ob
 
 <img width="1202" height="734" alt="image (2)" src="https://github.com/user-attachments/assets/164531b0-0746-48b5-968e-350737fa258e" />
 
-1. Jetzt könnt ihr beispielsweise nach gewünschten Entitäten **suchen**:
+### 1. Jetzt könnt ihr beispielsweise nach gewünschten Entitäten **suchen**:
 
     
     Über die Spaltennamen kann beim auswählen eine aufsteigende oder absteigende Sortierung erfolgen.
@@ -110,12 +110,12 @@ Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Ob
 
 <img width="1201" height="734" alt="image (3)" src="https://github.com/user-attachments/assets/11d213f2-1755-4419-8168-ab0c71ec8c9a" />
 
-2. Die **Entitätsstatistik** abrufen und sehen wie viele Lichter habt ihr oder wie viele Schalter usw.:
+### 2. Die **Entitätsstatistik** abrufen und sehen wie viele Lichter oder Schalter habt ihr usw.:
 
 <img width="401" height="432" alt="image (4)" src="https://github.com/user-attachments/assets/148a169a-915c-4e2a-83db-3341efd37d44" />
 
 
-3. Oder ihr könnt nach **Area** also Bereichen bzw. nach **Platform** und damit Integrationen filtern.
+### 3. Oder ihr könnt nach **Area** also Bereichen bzw. **Platform** und somit Integrationen filtern.
 
 <img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" />
 <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
