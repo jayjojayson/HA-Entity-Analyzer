@@ -9,7 +9,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest]
 
     steps:
     - name: Checkout repo
@@ -30,11 +30,6 @@ jobs:
       # Hinzugefügt: --hidden-import-Option für pandas
       run: pyinstaller --onefile --windowed --hidden-import 'pandas' -n entity_analyzer_v1_windows.exe entity_analyzer_v1.py
 
-    - name: Build executable (macOS)
-      if: matrix.os == 'macos-latest'
-      # Hinzugefügt: --hidden-import-Option für pandas
-      run: pyinstaller --onefile --windowed --hidden-import 'pandas' -n entity_analyzer_v1_macos entity_analyzer_v1.py
-      
     - name: Build executable (Linux)
       if: matrix.os == 'ubuntu-latest'
       # Hinzugefügt: --hidden-import-Option für pandas
@@ -47,3 +42,4 @@ jobs:
       env:
 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
