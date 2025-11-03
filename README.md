@@ -6,9 +6,13 @@ Entity_Analyzer to anlyze the exported csv file from Home Assistant
 
 Man kann wie im [HA-Forum](https://community.home-assistant.io/t/export-list-of-entities-automations-etc/884341/23) beschrieben wurde, auf dem Dahsboard einen Button anlegen, der nach drücken alle Home Assistant Entitäten, Automationen usw. in eine csv Datei exportiert. Diese Funktion vermisse ich aktuell in HA, da man so eine schöne “offline/backup” Variante hat, die Entitäten zu strukturieren, zu kontrollieren, zu dokumentieren bzw. sich einen Überblick zu verschaffen. Perfekt um “Leichen” auszusortieren, Namenstrukturen zu entwickeln usw.. Anschauen könnt ihr euch die csv-Datei z.B. mit dem beigefügtem Analyzer Tool oder mit Excel.
 
-<img width="551" height="86" alt="image (1)" src="https://github.com/user-attachments/assets/9dbb3d10-0c5c-4f98-90ed-8fffbba94ece" />
+Schaut gerne in die Community vorbei. Dort haben wir ein entsprechendes [Diskussion-Thema für den Austausch.](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten) 
+
+## Vorgehensweise
 
 Erstellt als erstes im Dashboard eine neue [custom button card](https://github.com/custom-cards/button-card) und fügt dort folgenden Code ein. Im Anschluss solltet ihr wie im Bild gezeigt diesen Button erhalten. Drückt nach Fertigstellung den Button und ihr bekommt die csv-Datei in den Download-Ordner.
+
+<img width="551" height="86" alt="image (1)" src="https://github.com/user-attachments/assets/9dbb3d10-0c5c-4f98-90ed-8fffbba94ece" />
 
 ```yaml
 type: custom:button-card
@@ -60,7 +64,7 @@ tap_action:
 
 ---
 
-Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Ihr könnt aber auch z.B. mit Excel (Spaltenansicht) oder anderem Programm die Datei anschauen. Für Windows gibt es gibt zwei Wege für die Installation, erstens bequem mit fertigem Programm arbeiten oder zweitens Python direkt installieren und das py-Script starten. Für Linux bleibt aktuell nur die Möglichkeit über Python direkt zu arbeiten, folgt dazu den Anweisungen. Für Windows ladet euch einfach die ausführbare Version (.exe) herunter und startet das Programm.
+Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Für Windows gibt es gibt zwei Wege für die Installation, erstens bequem mit fertigem Programm arbeiten oder zweitens Python direkt installieren und das py-Script starten. Für Linux bleibt aktuell nur die Möglichkeit über Python direkt zu arbeiten, folgt dazu den Anweisungen. Für Windows ladet euch einfach die ausführbare Version (.exe) herunter und startet das Programm.
 
 ### Betrifft nur die manuelle Installation:
 Das Tool nutzt Python, daher muss Python installiert sein oder werden!
@@ -122,5 +126,3 @@ Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Ob
 
 <img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" />
 <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
-
-Ihr könnt die geänderte csv-Datei mit Semikolon Trenner auch direkt in Excel öffnen und einsehen. Wer sich dort ein wenig auskennt, kann schnell die obere Zeile fixieren und ein Filter auf die Tabelle anwenden. Damit hat man einen ähnlichen Funktionsumfang wie mit meinem Tool. Aber nicht so ein eine schöne Zusammenfassung wie in den letzten Bildern. ;)
