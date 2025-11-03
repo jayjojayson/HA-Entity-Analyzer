@@ -1,3 +1,6 @@
+
+<img width="120" height="120" alt="analysis" src="https://github.com/user-attachments/assets/7e082b82-7ee9-448a-9919-f802debc88d0" /> 
+
 # HA-Entity-Analyzer
 Entity_Analyzer to anlyze the exported csv file from Home Assistant
 
