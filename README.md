@@ -64,9 +64,13 @@ tap_action:
 
 ---
 
-Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Für Windows gibt es gibt zwei Wege für die Installation, erstens bequem mit fertigem Programm arbeiten oder zweitens Python direkt installieren und das py-Script starten. Für Linux bleibt aktuell nur die Möglichkeit über Python direkt zu arbeiten, folgt dazu den Anweisungen. Für Windows ladet euch einfach die ausführbare Version (.exe) herunter und startet das Programm.
+## Installation
 
-### Betrifft nur die manuelle Installation:
+Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Für Windows gibt es gibt zwei Wege für die Installation, erstens bequem mit fertigem Programm arbeiten oder zweitens Python direkt installieren und das py-Script starten. Für Linux bleibt aktuell nur die Möglichkeit über Python direkt zu arbeiten, folgt dazu den Anweisungen. 
+
+### Für Windows ladet euch einfach die ausführbare Version (.exe) herunter und startet das Programm.
+
+### Betrifft nur die manuelle Installation!
 Das Tool nutzt Python, daher muss Python installiert sein oder werden!
 
 #### In **Windows** öffnet ihr dazu die Powershell und gebt folgenden Befehl ein:
