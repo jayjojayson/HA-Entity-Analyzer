@@ -6,7 +6,7 @@ Entity_Analyzer to anlyze the exported csv file from Home Assistant
 
 Man kann wie im [HA-Forum](https://community.home-assistant.io/t/export-list-of-entities-automations-etc/884341/23) beschrieben wurde, auf dem Dahsboard einen Button anlegen, der nach drücken alle Home Assistant Entitäten, Automationen usw. in eine csv Datei exportiert. Diese Funktion vermisse ich aktuell in HA, da man so eine schöne “offline/backup” Variante hat, die Entitäten zu strukturieren, zu kontrollieren, zu dokumentieren bzw. sich einen Überblick zu verschaffen. Perfekt um “Leichen” auszusortieren, Namenstrukturen zu entwickeln usw.. Anschauen könnt ihr euch die csv-Datei z.B. mit dem beigefügtem Analyzer Tool oder mit Excel.
 
-Schaut gerne in die Community vorbei. Dort haben wir ein entsprechendes [Diskussion-Thema für den Austausch.](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten) 
+Schaut gerne in der Community vorbei. Dort haben wir ein entsprechendes [Diskussion-Thema für den Austausch.](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten) 
 
 ## Vorgehensweise
 
