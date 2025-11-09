@@ -29,8 +29,8 @@ jobs:
 
     - name: Build executable (Windows)
       if: matrix.os == 'windows-latest'
-      # Hinzugefügt: --hidden-import-Option für pandas
-      run: pyinstaller --onefile --windowed --hidden-import 'pandas' -n entity_analyzer_v1_windows.exe linux/entity_analyzer_v1.py
+      # Hinzugefügt: --hidden-import-Option für pandas und --icon=E_A_T-logo.ico für App-Logo
+      run: pyinstaller --onefile --icon=E_A_T-logo.ico --windowed --hidden-import 'pandas' -n entity_analyzer_tool.exe entity_analyzer_tool.py
 
     - name: Upload binaries to release
       uses: softprops/action-gh-release@v2

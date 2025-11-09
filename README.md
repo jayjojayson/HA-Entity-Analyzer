@@ -1,14 +1,25 @@
 
-<img width="120" height="120" alt="analysis" src="https://github.com/user-attachments/assets/7e082b82-7ee9-448a-9919-f802debc88d0" /> 
+<img width="140" height="140" alt="E_A_T-logo" src="https://github.com/user-attachments/assets/c5266520-1eea-4d74-994a-4a34df8d7989" />
 
-# HA-Entity-Analyzer
+# Entity-Analyzer-Tool
 Entity_Analyzer to anlyze the exported csv file from Home Assistant
 
 Man kann wie im [HA-Forum](https://community.home-assistant.io/t/export-list-of-entities-automations-etc/884341/23) beschrieben wurde, auf dem Dahsboard einen Button anlegen, der nach drücken alle Home Assistant Entitäten, Automationen usw. in eine csv Datei exportiert. Diese Funktion vermisse ich aktuell in HA, da man so eine schöne “offline/backup” Variante hat, die Entitäten zu strukturieren, zu kontrollieren, zu dokumentieren bzw. sich einen Überblick zu verschaffen. Perfekt um “Leichen” auszusortieren, Namenstrukturen zu entwickeln usw.. Anschauen könnt ihr euch die csv-Datei z.B. mit dem beigefügtem Analyzer Tool oder mit Excel.
 
 Schaut gerne in der Community vorbei. Dort haben wir ein entsprechendes [Diskussion-Thema für den Austausch.](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten) 
 
-## Vorgehensweise
+#### App-Features:
+- 📄 simple Entities Tool to analyze your csv-file
+- ↔️ import and export csv file
+- 🔍 free entity search 
+- 🔖 area & platform filter
+- 📊 entities statistic
+#### Gui-Features
+- works on win, macos & linux
+- dark/lite mode
+- app on top (keep in foreground)
+
+## 📌 Vorgehensweise
 
 Erstellt als erstes im Dashboard eine neue [custom button card](https://github.com/custom-cards/button-card) und fügt dort folgenden Code ein. Im Anschluss solltet ihr wie im Bild gezeigt diesen Button erhalten. Drückt nach Fertigstellung den Button und ihr bekommt die csv-Datei in den Download-Ordner.
 
@@ -64,7 +75,7 @@ tap_action:
 
 ---
 
-## Installation
+## 📌 Installation
 
 Ich habe ein kleines Python Tool entwickelt, dass die CSV einlesen kann. Für Windows gibt es gibt zwei Wege für die Installation, erstens bequem mit fertigem Programm arbeiten oder zweitens Python direkt installieren und das py-Script starten. Für Linux bleibt aktuell nur die Möglichkeit über Python direkt zu arbeiten, folgt dazu den Anweisungen. 
 
@@ -108,15 +119,16 @@ python3 entity_analyzer_v1.py
 ```
 
 ---
+## 📌 Nutzung
 
-Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Oberfläche bietet ein paar Möglichkeiten eure Entitäten zu sichten. Nach dem öffnen seht ihr unten links die Anzahl der Entitäten!
+Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Oberfläche bietet ein paar Möglichkeiten eure Entitäten zu sichten. Nach dem öffnen seht ihr unten links die Anzahl der Entitäten! Dort werden auch sonst nützliche Infos angezeigt.
 
 <img width="1202" height="734" alt="image (2)" src="https://github.com/user-attachments/assets/164531b0-0746-48b5-968e-350737fa258e" />
 
 ### 1. Jetzt könnt ihr beispielsweise nach gewünschten Entitäten **suchen**:
 
     
-    Über die Spaltennamen kann beim auswählen eine aufsteigende oder absteigende Sortierung erfolgen.
+Über die Spaltennamen kann beim auswählen eine aufsteigende oder absteigende Sortierung erfolgen. Außerdem könnt ihr die aktuelle Ansicht der Suche als neue csv Datei exportieren.
     
 
 <img width="1201" height="734" alt="image (3)" src="https://github.com/user-attachments/assets/11d213f2-1755-4419-8168-ab0c71ec8c9a" />
@@ -130,3 +142,7 @@ Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Ob
 
 <img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" />
 <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
+
+---
+
+### ⭐ Danke für die Unterstützung aus der Community, besonders an Dreckfresse, Nicknol und MarzyHA. Immer wieder schön, was man gemeinsam erreichen kann.
