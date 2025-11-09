@@ -8,6 +8,8 @@ Man kann wie im [HA-Forum](https://community.home-assistant.io/t/export-list-of-
 
 Schaut gerne in der Community vorbei. Dort haben wir ein entsprechendes [Diskussion-Thema für den Austausch.](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten) 
 
+Wenn euch das Tool gefällt würde ich mir über einen Stern von euch freuen. :)
+
 #### App-Features:
 - 📄 simple Entities Tool to analyze your csv-file
 - ↔️ import and export csv file
@@ -115,7 +117,7 @@ pip install pandas
 Um das Programm zu öffnen, wechselt mit cd /euer Verzeichnis in den Ordner wo euer Entity_Analyzer liegt und startet mit folgendem Befehl das Tool.
 
 ```powershell
-python3 entity_analyzer_v1.py
+python3 entity_analyzer_tool.py
 ```
 
 ---
