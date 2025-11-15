@@ -1,4 +1,3 @@
-
 <img width="140" height="140" alt="E_A_T-logo" src="https://github.com/user-attachments/assets/c5266520-1eea-4d74-994a-4a34df8d7989" />
 
 # Entity-Analyzer-Tool
@@ -8,7 +7,7 @@ Man kann wie im [HA-Forum](https://community.home-assistant.io/t/export-list-of-
 
 Schaut gerne in der Community vorbei. Dort haben wir ein entsprechendes [Diskussion-Thema für den Austausch.](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten) 
 
-Wenn euch das Tool gefällt würde ich mir über einen Stern von euch freuen. :)
+Wenn euch das Tool gefällt würde ich mir über einen Stern ⭐ von euch freuen. 🤗
 
 #### App-Features:
 - 📄 simple Entities Tool to analyze your csv-file
@@ -144,6 +143,11 @@ Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Ob
 
 <img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" />
 <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
+
+
+[![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/total?label=downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases)
+[![Latest release downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/latest/total?label=latest%20downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases/latest)
+[![Forum](https://img.shields.io/badge/Forum-41BDF5?style=flat&logo=homeassistant&logoColor=white)]([[https://community.home-assistant.io/t/new-lovelace-card-flex-cells-card/919780](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten/8657)](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten/8657))
 
 ---
 
