@@ -145,10 +145,9 @@ Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Ob
 <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
 
 
-[![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/total?label=downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases)
-[![Latest release downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/latest/total?label=latest%20downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases/latest)
-[![Forum](https://img.shields.io/badge/Forum-41BDF5?style=flat&logo=homeassistant&logoColor=white)]([[https://community.home-assistant.io/t/new-lovelace-card-flex-cells-card/919780](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten/8657)](https://community-smarthome.com/t/tutorial-alle-ha-entitaeten-per-csv-auslesen-und-mit-analyzer-tool-oder-excel-auswerten/8657))
-
 ---
 
 ### ⭐ Danke für die Unterstützung aus der Community, besonders an Dreckfresse, Nicknol und MarzyHA. Immer wieder schön, was man gemeinsam erreichen kann.
+
+[![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/total?label=downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases)
+[![Latest release downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/latest/total?label=latest%20downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases/latest)
