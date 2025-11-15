@@ -149,5 +149,5 @@ Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Ob
 
 ### ⭐ Danke für die Unterstützung aus der Community, besonders an Dreckfresse, Nicknol und MarzyHA. Immer wieder schön, was man gemeinsam erreichen kann.
 
-[![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/total?label=downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases)
-[![Latest release downloads](https://img.shields.io/github/downloads/jayjojayson/HA_homedashboard/latest/total?label=latest%20downloads&logo=github)](https://github.com/jayjojayson/HA_homedashboard/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA-Entity-Analyzer/total?label=downloads&logo=github)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases)
+[![Latest release downloads](https://img.shields.io/github/downloads/jayjojayson/HA-Entity-Analyzer/latest/total?label=latest%20downloads&logo=github)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases/latest)
