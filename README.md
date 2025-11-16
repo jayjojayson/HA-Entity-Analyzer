@@ -1,3 +1,7 @@
+[![GitHub release](https://img.shields.io/github/release/jayjojayson/HA-Entity-Analyzer?include_prereleases=&sort=semver&color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases/)
+[![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA-Entity-Analyzer/total?label=downloads&logo=github&color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases)
+[![GH-code-size](https://img.shields.io/github/languages/code-size/jayjojayson/HA-Entity-Analyzer?color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer)
+
 <img width="140" height="140" alt="E_A_T-logo" src="https://github.com/user-attachments/assets/c5266520-1eea-4d74-994a-4a34df8d7989" />
 
 # Entity-Analyzer-Tool
