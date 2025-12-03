@@ -95,8 +95,10 @@ tap_action:
     ]]]
 ```
 
+---
+
 <details>
-   <summary> <b>For HA-Version before 2025.11! Use this card below and dowload the ver_1.1</b></summary> 
+   <summary> <b>For HA-Version before 2025.11 use this card below and dowload the ver_1.1</b></summary> 
    
 ```yaml
 type: custom:button-card
@@ -197,19 +199,18 @@ python3 entity_analyzer_tool.py
 
 Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Oberfläche bietet ein paar Möglichkeiten eure Entitäten zu sichten. Nach dem öffnen seht ihr unten links die Anzahl der Entitäten! Dort werden auch sonst nützliche Infos angezeigt.
 
-<img width="1202" height="734" alt="image (2)" src="https://github.com/user-attachments/assets/164531b0-0746-48b5-968e-350737fa258e" />
+<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/67fe18c6-1c2e-49f9-be7b-12c46bd9d92d" />
 
 ### 1. Jetzt könnt ihr beispielsweise nach gewünschten Entitäten **suchen**:
 
     
 Über die Spaltennamen kann beim auswählen eine aufsteigende oder absteigende Sortierung erfolgen. Außerdem könnt ihr die aktuelle Ansicht der Suche als neue csv Datei exportieren.
     
-
-<img width="1201" height="734" alt="image (3)" src="https://github.com/user-attachments/assets/11d213f2-1755-4419-8168-ab0c71ec8c9a" />
+<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/d84a0497-aa8a-4356-b631-17276693ee4d" />
 
 ### 2. Die **Entitätsstatistik** abrufen und sehen wie viele Lichter oder Schalter habt ihr usw.:
 
-<img width="401" height="432" alt="image (4)" src="https://github.com/user-attachments/assets/148a169a-915c-4e2a-83db-3341efd37d44" />
+<img width="402" height="582" alt="image" src="https://github.com/user-attachments/assets/28d4575d-290c-4e22-9146-8011793e68c5" />
 
 
 ### 3. Oder ihr könnt nach **Area** also Bereichen bzw. **Platform** und somit Integrationen filtern.
