@@ -20,7 +20,7 @@ Wenn euch das Tool gefällt würde ich mir über einen Stern ⭐ von euch freuen
 - 🔖 area & platform filter
 - 📊 entities statistic
 #### Gui-Features
-- works on win, macos & linux
+- works on win, (macos & linux)
 - dark/lite mode
 - app on top (keep in foreground)
 
@@ -30,6 +30,74 @@ Erstellt als erstes im Dashboard eine neue [custom button card](https://github.c
 
 <img width="551" height="86" alt="image (1)" src="https://github.com/user-attachments/assets/9dbb3d10-0c5c-4f98-90ed-8fffbba94ece" />
 
+```yaml
+type: custom:button-card
+name: Entity Export as CSV
+tap_action:
+  action: javascript
+  javascript: |
+    [[[
+      function clean(value) {
+        if (!value) return "";
+        return String(value)
+          .replace(/;/g, ",")   
+          .replace(/\r?\n|\r/g, " ");  
+      }
+
+      async function generateCSV() {
+        const hass = document.querySelector("home-assistant").hass;
+
+        const areas = await hass.callWS({ type: "config/area_registry/list" });
+        const devices = await hass.callWS({ type: "config/device_registry/list" });
+        const entities = await hass.callWS({ type: "config/entity_registry/list" });
+
+        const areaLookup = {};
+        areas.forEach(a => areaLookup[a.area_id] = a.name);
+
+        let csv = "ENTITY ID;ENTITY NAME;DEVICE NAME;DEVICE ID;AREA;PLATFORM;STATE;FORMATTED STATE\n";
+
+        Object.values(hass.states)
+          .sort((a,b) => a.entity_id.localeCompare(b.entity_id))
+          .forEach(stateObj => {
+
+            const entReg = entities.find(e => e.entity_id === stateObj.entity_id);
+            const device = devices.find(d => d.id === entReg?.device_id);
+
+            const areaName =
+              entReg?.area_id ? areaLookup[entReg.area_id] || "" :
+              device?.area_id ? areaLookup[device.area_id] || "" :
+              "";
+
+            const row = [
+              clean(stateObj.entity_id),
+              clean(hass.formatEntityName(stateObj)),
+              clean(device?.name || ""),
+              clean(entReg?.device_id || ""),
+              clean(areaName),
+              clean(entReg?.platform || ""),
+              clean(stateObj.state),
+              clean(hass.formatEntityState(stateObj))
+            ].join("; ");
+
+            csv += row + "\n";
+          });
+
+        const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "hass_entities.csv";
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+
+      generateCSV();
+    ]]]
+```
+
+<details>
+   <summary> <b>For HA-Version before 2025.11! Use this card below and dowload the ver_1.1</b></summary> 
+   
 ```yaml
 type: custom:button-card
 name: Entity Export as CSV
@@ -77,6 +145,7 @@ tap_action:
       generateEntityItems();
     ]]]
 ```
+</details>
 
 ---
 
