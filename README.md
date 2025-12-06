@@ -1,6 +1,7 @@
 [![GitHub release](https://img.shields.io/github/release/jayjojayson/HA-Entity-Analyzer?include_prereleases=&sort=semver&color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases/)
 [![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA-Entity-Analyzer/total?label=downloads&logo=github&color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases)
 [![GH-code-size](https://img.shields.io/github/languages/code-size/jayjojayson/HA-Entity-Analyzer?color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer)
+[![README English](https://img.shields.io/badge/README-English-orange)](https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/readME-Eng.md)
 
 <img width="140" height="140" alt="E_A_T-logo" src="https://github.com/user-attachments/assets/c5266520-1eea-4d74-994a-4a34df8d7989" />
 
@@ -16,13 +17,16 @@ Wenn euch das Tool gefällt würde ich mir über einen Stern ⭐ von euch freuen
 #### App-Features:
 - 📄 simple Entities Tool to analyze your csv-file
 - ↔️ import and export csv file
-- 🔍 free entity search 
+- 🔍 free entity search   
 - 🔖 area & platform filter
 - 📊 entities statistic
+
 #### Gui-Features
 - works on win, (macos & linux)
 - dark/lite mode
 - app on top (keep in foreground)
+
+Exported csv includes: entity_id, entityName, device_id, deviceName, area, plattform, state, manufacturer, model, model_id, sw_version, hw_version 
 
 ## 📌 Vorgehensweise
 
@@ -40,8 +44,8 @@ tap_action:
       function clean(value) {
         if (!value) return "";
         return String(value)
-          .replace(/;/g, ",")   
-          .replace(/\r?\n|\r/g, " ");  
+          .replace(/;/g, ",")
+          .replace(/\r?\n|\r/g, " ");
       }
 
       async function generateCSV() {
@@ -52,21 +56,37 @@ tap_action:
         const entities = await hass.callWS({ type: "config/entity_registry/list" });
 
         const areaLookup = {};
-        areas.forEach(a => areaLookup[a.area_id] = a.name);
+        areas.forEach(a => (areaLookup[a.area_id] = a.name));
 
-        let csv = "ENTITY ID;ENTITY NAME;DEVICE NAME;DEVICE ID;AREA;PLATFORM;STATE;FORMATTED STATE\n";
+        let csv =
+          "ENTITY ID;ENTITY NAME;DEVICE NAME;DEVICE ID;AREA;PLATFORM;STATE;FORMATTED STATE;" +
+          "MANUFACTURER;MODEL;MODEL ID;SW VERSION;HW VERSION\n";
 
         Object.values(hass.states)
-          .sort((a,b) => a.entity_id.localeCompare(b.entity_id))
+          .sort((a, b) => a.entity_id.localeCompare(b.entity_id))
           .forEach(stateObj => {
-
             const entReg = entities.find(e => e.entity_id === stateObj.entity_id);
             const device = devices.find(d => d.id === entReg?.device_id);
 
             const areaName =
-              entReg?.area_id ? areaLookup[entReg.area_id] || "" :
-              device?.area_id ? areaLookup[device.area_id] || "" :
-              "";
+              entReg?.area_id
+                ? areaLookup[entReg.area_id] || ""
+                : device?.area_id
+                ? areaLookup[device.area_id] || ""
+                : "";
+
+            // Plattform
+            const platform =
+              entReg?.platform ||
+              entReg?.integration ||
+              stateObj.entity_id.split(".")[0];
+
+            // Geräteattribute
+            const manufacturer = device?.manufacturer || "";
+            const model = device?.model || "";
+            const model_id = device?.model_id || "";
+            const sw_version = device?.sw_version || "";
+            const hw_version = device?.hw_version || "";
 
             const row = [
               clean(stateObj.entity_id),
@@ -74,9 +94,14 @@ tap_action:
               clean(device?.name || ""),
               clean(entReg?.device_id || ""),
               clean(areaName),
-              clean(entReg?.platform || ""),
+              clean(platform),
               clean(stateObj.state),
-              clean(hass.formatEntityState(stateObj))
+              clean(hass.formatEntityState(stateObj)),
+              clean(manufacturer),
+              clean(model),
+              clean(model_id),
+              clean(sw_version),
+              clean(hw_version)
             ].join("; ");
 
             csv += row + "\n";
