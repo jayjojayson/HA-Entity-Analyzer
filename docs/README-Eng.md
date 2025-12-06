@@ -1,7 +1,6 @@
 [![GitHub release](https://img.shields.io/github/release/jayjojayson/HA-Entity-Analyzer?include_prereleases=&sort=semver&color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases/)
 [![Downloads](https://img.shields.io/github/downloads/jayjojayson/HA-Entity-Analyzer/total?label=downloads&logo=github&color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer/releases)
 [![GH-code-size](https://img.shields.io/github/languages/code-size/jayjojayson/HA-Entity-Analyzer?color=blue)](https://github.com/jayjojayson/HA-Entity-Analyzer)
-[![README English](https://img.shields.io/badge/README-English-orange)](https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/readME-Eng.md)
 
 <img width="140" height="140" alt="E_A_T-logo" src="https://github.com/user-attachments/assets/c5266520-1eea-4d74-994a-4a34df8d7989" />
 
@@ -138,10 +137,14 @@ Now you can open the Entity_Analyzer and select your csv file. The interface off
 
 By clicking on column names, you can sort ascending or descending. Also, you can export the current search view as a new csv file.
 
-<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/d84a0497-aa8a-4356-b631-17276693ee4d" />
-2. Retrieve the entity statistics and see how many lights or switches you have, etc.:
-<img width="402" height="582" alt="image" src="https://github.com/user-attachments/assets/28d4575d-290c-4e22-9146-8011793e68c5" />
-3. Or you can filter by Area or Platform (i.e., integrations).
-<img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" /> <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
+<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/d84a0497-aa8a-4356-b631-17276693ee4d" />  
+
+2. Retrieve the entity statistics and see how many lights or switches you have, etc.:  
+
+<img width="402" height="582" alt="image" src="https://github.com/user-attachments/assets/28d4575d-290c-4e22-9146-8011793e68c5" />  
+
+3. Or you can filter by Area or Platform (i.e., integrations).  
+
+<img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" /> <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />  
 
 ⭐ Thanks for the support from the community, especially Dreckfresse, Nicknol and MarzyHA. Always nice to see what can be achieved together.
