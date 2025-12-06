@@ -179,14 +179,13 @@ tap_action:
 
 I developed a small Python tool that can read the CSV. On Windows there are two ways to install it:
 
-Use the precompiled executable, or
-
-Install Python and run the script directly.
+- use the precompiled executable
+- or install Python and run the script directly.
 For Linux, the only option currently is to run it with Python directly — follow the instructions below.
 
-On Windows simply download the executable (.exe) and run the program.
-Manual installation only!
+On Windows simply download the executable (.exe) and run the program.  
 
+Manual installation only!  
 The tool requires Python, so Python must be installed.
 
 On Windows, open PowerShell and enter:
