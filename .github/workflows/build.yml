@@ -15,21 +15,20 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v5
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v5
       with:
         python-version: '3.12'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pyinstaller pandas
+        pip install pyinstaller pandas matplotlib numpy
 
     - name: Build executable (Windows)
       if: matrix.os == 'windows-latest'
-      # Hinzugefügt: --hidden-import-Option für pandas und --icon=E_A_T-logo.ico für App-Logo
       run: pyinstaller --onefile --icon=E_A_T-logo.ico --windowed --hidden-import 'pandas' -n entity_analyzer_tool.exe entity_analyzer_tool.py
 
     - name: Upload binaries to release
@@ -37,5 +36,5 @@ jobs:
       with:
         files: dist/*
       env:
-
+      
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
