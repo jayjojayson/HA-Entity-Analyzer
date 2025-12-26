@@ -6,10 +6,13 @@ on:
 
 jobs:
   build:
+    name: Build for ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
-        os: [windows-latest]
+        os: [windows-latest, ubuntu-latest, macos-latest]
+    
     permissions:
       contents: write
 
@@ -29,12 +32,23 @@ jobs:
 
     - name: Build executable (Windows)
       if: matrix.os == 'windows-latest'
-      run: pyinstaller --onefile --icon=E_A_T-logo.ico --windowed --hidden-import 'pandas' -n entity_analyzer_tool.exe entity_analyzer_tool.py
+      # Mit Icon, .exe Endung und erweiterten hidden-imports
+      run: pyinstaller --onefile --icon=E_A_T-logo.ico --windowed --hidden-import 'pandas' --hidden-import 'matplotlib' --hidden-import 'numpy' -n entity_analyzer_tool_win.exe entity_analyzer_tool.py
+
+    - name: Build executable (Linux)
+      if: matrix.os == 'ubuntu-latest'
+      # Ohne Icon-Flag, ohne .exe Endung, aber mit erweiterten hidden-imports
+      run: pyinstaller --onefile --windowed --hidden-import 'pandas' --hidden-import 'matplotlib' --hidden-import 'numpy' -n entity_analyzer_tool_linux entity_analyzer_tool.py
+
+    - name: Build executable (macOS)
+      if: matrix.os == 'macos-latest'
+      # Ohne Icon-Flag, ohne Endung, mit erweiterten hidden-imports
+      run: pyinstaller --onefile --windowed --hidden-import 'pandas' --hidden-import 'matplotlib' --hidden-import 'numpy' -n entity_analyzer_tool_mac entity_analyzer_tool.py
 
     - name: Upload binaries to release
       uses: softprops/action-gh-release@v2
+      if: always()
       with:
         files: dist/*
       env:
-      
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
