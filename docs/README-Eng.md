@@ -37,7 +37,7 @@ First, create a new [custom button card](https://github.com/custom-cards/button-
 
 ```yaml
 type: custom:button-card
-name: Entity Export as CSV
+name: Entity Export as CSV2
 tap_action:
   action: javascript
   javascript: |

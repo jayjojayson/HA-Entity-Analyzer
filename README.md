@@ -37,7 +37,7 @@ Erstellt als erstes im Dashboard eine neue [custom button card](https://github.c
 
 ```yaml
 type: custom:button-card
-name: Entity Export as CSV
+name: Entity Export as CSV2
 tap_action:
   action: javascript
   javascript: |
