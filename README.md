@@ -225,25 +225,31 @@ python3 entity_analyzer_tool.py
 
 Nun könnt ihr den Entity_Analyzer öffnen und eure csv-Datei auswählen. Die Oberfläche bietet ein paar Möglichkeiten eure Entitäten zu sichten. Nach dem öffnen seht ihr unten links die Anzahl der Entitäten! Dort werden auch sonst nützliche Infos angezeigt.
 
-<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/67fe18c6-1c2e-49f9-be7b-12c46bd9d92d" />
+<img width="60%" height="auto" alt="image" src="https://github.com/user-attachments/assets/67fe18c6-1c2e-49f9-be7b-12c46bd9d92d" />
 
 ### 1. Jetzt könnt ihr beispielsweise nach gewünschten Entitäten **suchen**:
 
     
 Über die Spaltennamen kann beim auswählen eine aufsteigende oder absteigende Sortierung erfolgen. Außerdem könnt ihr die aktuelle Ansicht der Suche als neue csv Datei exportieren.
     
-<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/d84a0497-aa8a-4356-b631-17276693ee4d" />
+<img width="60%" height="auto" alt="image" src="https://github.com/user-attachments/assets/d84a0497-aa8a-4356-b631-17276693ee4d" />
 
 ### 2. Die **Entitätsstatistik** abrufen und sehen wie viele Lichter oder Schalter habt ihr usw.:
 
-<img width="402" height="582" alt="image" src="https://github.com/user-attachments/assets/28d4575d-290c-4e22-9146-8011793e68c5" />
+<img width="33%" height="auto" alt="image" src="https://github.com/user-attachments/assets/28d4575d-290c-4e22-9146-8011793e68c5" />
 
 
 ### 3. Oder ihr könnt nach **Area** also Bereichen bzw. **Platform** und somit Integrationen filtern.
 
-<img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" />
-<img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
+<img width="35%" height="auto" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" />
+<img width="35%" height="auto" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
 
+### 4. Ihr könnt jetzt auch eure exportierte energy.csv mit dem Tool anschauen und analysieren.
+
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(2).png" />
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(3).png" />
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(4).png" />
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(1).png" />
 
 ---
 
