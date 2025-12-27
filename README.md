@@ -18,11 +18,12 @@ Wenn euch das Tool gefällt würde ich mir über einen Stern ⭐ von euch freuen
 - 📄 simple Entities Tool to analyze your csv-file
 - ↔️ import and export csv file
 - 🔍 free entity search   
-- 🔖 area & platform filter
+- 🔖 area, manufacturer & platform filter
 - 📊 entities statistic
+- 📊 energy statistic (imported HA energy.csv)
 
 #### Gui-Features
-- works on win, (macos & linux)
+- works on win, macos & linux
 - dark/lite mode
 - app on top (keep in foreground)
 
