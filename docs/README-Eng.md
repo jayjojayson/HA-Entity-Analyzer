@@ -224,19 +224,27 @@ python3 entity_analyzer_tool.py
 
 Now you can open the Entity_Analyzer and select your csv file. The interface offers several options to review your entities. After opening, you will see the number of entities at the bottom left! Useful info is also shown there.
 
-<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/67fe18c6-1c2e-49f9-be7b-12c46bd9d92d" />
+<img width="60%" height="auto" alt="image" src="https://github.com/user-attachments/assets/67fe18c6-1c2e-49f9-be7b-12c46bd9d92d" />
 1. Now you can search for desired entities:
 
 By clicking on column names, you can sort ascending or descending. Also, you can export the current search view as a new csv file.
 
-<img width="1202" height="732" alt="image" src="https://github.com/user-attachments/assets/d84a0497-aa8a-4356-b631-17276693ee4d" />  
+<img width="60%" height="auto" alt="image" src="https://github.com/user-attachments/assets/d84a0497-aa8a-4356-b631-17276693ee4d" />
 
 2. Retrieve the entity statistics and see how many lights or switches you have, etc.:  
 
-<img width="402" height="582" alt="image" src="https://github.com/user-attachments/assets/28d4575d-290c-4e22-9146-8011793e68c5" />  
+<img width="33%" height="auto" alt="image" src="https://github.com/user-attachments/assets/28d4575d-290c-4e22-9146-8011793e68c5" />
 
 3. Or you can filter by Area or Platform (i.e., integrations).  
 
-<img width="281" height="261" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" /> <img width="294" height="270" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />  
+<img width="35%" height="auto" alt="image (5)" src="https://github.com/user-attachments/assets/87a48bf9-9e9d-4575-8537-212dde444bd5" />
+<img width="35%" height="auto" alt="image (6)" src="https://github.com/user-attachments/assets/417d8390-7393-48d3-9424-31517dae19fa" />
+
+4. You can now also view and analyze your exported energy.csv file with the tool.
+
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(2).png" />
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(3).png" />
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(4).png" />
+<img width="60%" height="auto" alt="image (5)" src="https://github.com/jayjojayson/HA-Entity-Analyzer/blob/main/docs/entity_analyzer_tool%20(1).png" />
 
 ⭐ Thanks for the support from the community, especially Dreckfresse, Nicknol and MarzyHA. Always nice to see what can be achieved together.
