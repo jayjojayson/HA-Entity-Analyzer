@@ -15,16 +15,17 @@ Feel free to join the community — we have a dedicated [discussion topic for ex
 If you like the tool, I would appreciate a ⭐. 🤗
 
 #### App-Features:
-- 📄 simple entity tool to analyze your csv file
-- ↔️ import and export csv files
-- 🔍 free entity search
-- 🔖 area & platform filter
-- 📊 entity statistics
+- 📄 simple Entities Tool to analyze your csv-file
+- ↔️ import and export csv file
+- 🔍 free entity search   
+- 🔖 area, manufacturer & platform filter
+- 📊 entities statistic
+- 📊 energy statistic (imported HA energy.csv)
 
 #### Gui-Features
-- works on Windows (macOS & Linux planned)
-- dark/light mode
-- keep app on top (stay in foreground)
+- works on win, macos & linux
+- dark/lite mode
+- app on top (keep in foreground)
 
 Exported CSV includes: entity_id, entityName, device_id, deviceName, area, platform, state, manufacturer, model, model_id, sw_version, hw_version
 
